@@ -145,7 +145,7 @@
       
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="progress-list.html">
           <i class="bi bi-pencil"></i>
           <span>受験中一覧</span>
         </a>
@@ -256,6 +256,12 @@
 								<label for="inputText" class="col-sm-2 col-form-label">求人番号</label>
 								<div class="col-sm-4">
 									<input type="text" class="form-control">
+								</div>
+							</div>
+		                	<div class="row mb-3">
+								<label for="inputText" class="col-sm-2 col-form-label">開催日</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control">から<input type="text" class="form-control">まで
 								</div>
 							</div>
 		                	<div class="row mb-3">
@@ -436,87 +442,135 @@
 			                    <th scope="col">#</th>
 			                    <th scope="col">求人番号</th>
 			                    <th scope="col">企業名</th>
+			                    <th scope="col">職種</th>
 			                    <th scope="col">種類</th>
 			                    <th scope="col">実施日</th>
+			                    <th scope="col">開始時間</th>
+			                    <th scope="col">勤務地</th>
+			                    <th scope="col">参加者一覧（先生権限）</th>
 			                  </tr>
 			                </thead>
 			                <tbody>
 			                  <tr>
 			                    <th scope="row">1</th>
 			                    <td>0000000</td>
-			                    <td><a href="#">株式会社〇×△</a></td>
+			                    <td><a href="company-detail.html">株式会社〇×△</a></td>
+			                    <td>SE PG</td>
 			                    <td>説明会</td>
 			                    <td>2016-05-25</td>
+			                    <td>13:00</td>
+			                    <td>東京</td>
+			                    <td><button class="btn btn-outline-primary" onclick="window.open('student-participant-list.html','window1');return false;">参加者一覧</button></td>
 			                  </tr>
 			                  <tr>
 			                    <th scope="row">2</th>
 			                    <td>0000000</td>
-			                    <td><a href="#">株式会社〇×△</a></td>
+			                    <td><a href="company-detail.html">株式会社〇×△</a></td>
+			                    <td>SE PG OP</td>
 			                    <td>選考会</td>
 			                    <td>2016-05-25</td>
+			                    <td>13:00</td>
+			                    <td>東京</td>
+			                    <td><button class="btn btn-outline-primary" onclick="window.open('student-participant-list.html','window1');return false;">参加者一覧</button></td>
 			                  </tr>
 			                  <tr>
 			                    <th scope="row">3</th>
 			                    <td>0000000</td>
-			                    <td><a href="#">株式会社〇×△</a></td>
+			                    <td><a href="company-detail.html">株式会社〇×△</a></td>
+			                    <td>SE</td>
 			                    <td>説明会/選考会</td>
 			                    <td>2016-05-25</td>
+			                    <td>13:00</td>
+			                    <td>東京</td>
+			                    <td><button class="btn btn-outline-primary" onclick="window.open('student-participant-list.html','window1');return false;">参加者一覧</button></td>
 			                  </tr>
 			                  <tr>
 			                    <th scope="row">4</th>
 			                    <td>0000000</td>
-			                    <td><a href="#">株式会社〇×△</a></td>
+			                    <td><a href="company-detail.html">株式会社〇×△</a></td>
+			                    <td>CE</td>
 			                    <td>選考会</td>
 			                    <td>2016-05-25</td>
+			                    <td>13:00</td>
+			                    <td>東京</td>
+			                    <td><button class="btn btn-outline-primary" onclick="window.open('student-participant-list.html','window1');return false;">参加者一覧</button></td>
 			                  </tr>
 			                  <tr>
 			                    <th scope="row">5</th>
 			                    <td>0000000</td>
-			                    <td><a href="#">株式会社〇×△</a></td>
+			                    <td><a href="company-detail.html">株式会社〇×△</a></td>
+			                    <td>SE PG</td>
 			                    <td>説明会</td>
 			                    <td>2016-05-25</td>
+			                    <td>13:00</td>
+			                    <td>東京</td>
+			                    <td><button class="btn btn-outline-primary" onclick="window.open('student-participant-list.html','window1');return false;">参加者一覧</button></td>
 			                  </tr>
 			                  <tr>
 			                    <th scope="row">6</th>
 			                    <td>0000000</td>
-			                    <td><a href="#">株式会社〇×△</a></td>
+			                    <td><a href="company-detail.html">株式会社〇×△</a></td>
+			                    <td>SE OP</td>
 			                    <td>説明会</td>
 			                    <td>2016-05-25</td>
+			                    <td>13:00</td>
+			                    <td>東京</td>
+			                    <td><button class="btn btn-outline-primary" onclick="window.open('student-participant-list.html','window1');return false;">参加者一覧</button></td>
 			                  </tr>
 			                  <tr>
 			                    <th scope="row">7</th>
 			                    <td>0000000</td>
-			                    <td><a href="#">株式会社〇×△</a></td>
+			                    <td><a href="company-detail.html">株式会社〇×△</a></td>
+			                    <td>PG</td>
 			                    <td>説明会</td>
 			                    <td>2016-05-25</td>
+			                    <td>13:00</td>
+			                    <td>東京</td>
+			                    <td><button class="btn btn-outline-primary" onclick="window.open('student-participant-list.html','window1');return false;">参加者一覧</button></td>
 			                  </tr>
 			                  <tr>
 			                    <th scope="row">8</th>
 			                    <td>0000000</td>
-			                    <td><a href="#">株式会社〇×△</a></td>
+			                    <td><a href="company-detail.html">株式会社〇×△</a></td>
+			                    <td>SE PG</td>
 			                    <td>説明会</td>
 			                    <td>2016-05-25</td>
+			                    <td>13:00</td>
+			                    <td>東京</td>
+			                    <td><button class="btn btn-outline-primary" onclick="window.open('student-participant-list.html','window1');return false;">参加者一覧</button></td>
 			                  </tr>
 			                  <tr>
 			                    <th scope="row">9</th>
 			                    <td>0000000</td>
-			                    <td><a href="#">株式会社〇×△</a></td>
+			                    <td><a href="company-detail.html">株式会社〇×△</a></td>
+			                    <td>SE PG</td>
 			                    <td>説明会</td>
 			                    <td>2016-05-25</td>
+			                    <td>13:00</td>
+			                    <td>東京</td>
+			                    <td><button class="btn btn-outline-primary" onclick="window.open('student-participant-list.html','window1');return false;">参加者一覧</button></td>
 			                  </tr>
 			                  <tr>
 			                    <th scope="row">10</th>
 			                    <td>0000000</td>
-			                    <td><a href="#">株式会社〇×△</a></td>
+			                    <td><a href="company-detail.html">株式会社〇×△</a></td>
+			                    <td>SE PG</td>
 			                    <td>説明会</td>
 			                    <td>2016-05-25</td>
+			                    <td>13:00</td>
+			                    <td>東京</td>
+			                    <td><button class="btn btn-outline-primary" onclick="window.open('student-participant-list.html','window1');return false;">参加者一覧</button></td>
 			                  </tr>
 			                  <tr>
 			                    <th scope="row">11</th>
 			                    <td>0000000</td>
-			                    <td><a href="#">株式会社〇×△</a></td>
+			                    <td><a href="company-detail.html">株式会社〇×△</a></td>
+			                    <td>SE PG</td>
 			                    <td>説明会</td>
 			                    <td>2016-05-25</td>
+			                    <td>13:00</td>
+			                    <td>東京</td>
+			                    <td><button class="btn btn-outline-primary" onclick="window.open('student-participant-list.html','window1');return false;">参加者一覧</button></td>
 			                  </tr>
 			                </tbody>
               			</table><!-- table -->

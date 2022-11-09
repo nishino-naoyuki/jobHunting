@@ -232,13 +232,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>ダッシュボード</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
-        </ol>
-      </nav>
+      <h1>学生一覧</h1>
     </div><!-- End Page Title -->
 
     <section class="section dashboard">
@@ -246,57 +240,120 @@
     		<div class="col-lg-12">
     			<div class="card">
     				<div class="card-body">
-    					<h5 class="card-title">企業情報入力</h5>
-    					<div class="row mb-3">
-		                  <label for="inputNumber" class="col-sm-2 col-form-label">pdfより読み込み</label>
-		                  <div class="col-sm-10">
-		                    <input class="form-control" type="file" id="formFile">
-		                  </div>
-		                </div>
+    					<h5 class="card-title">検索条件</h5>
+    					
 		                <form>
 		                	<div class="row mb-3">
-								<label for="inputText" class="col-sm-2 col-form-label">企業名</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control">
-								</div>
-							</div>
-		                	<div class="row mb-3">
-								<label for="inputText" class="col-sm-2 col-form-label">求人番号</label>
+								<label for="inputText" class="col-sm-2 col-form-label">学生名</label>
 								<div class="col-sm-4">
 									<input type="text" class="form-control">
 								</div>
-								<label for="inputText" class="col-sm-2 col-form-label">資本金</label>
+								<label for="inputText" class="col-sm-2 col-form-label">学籍番号</label>
 								<div class="col-sm-4">
 									<input type="text" class="form-control">
 								</div>
 							</div>
 		                	<div class="row mb-3">
-								<label for="inputText" class="col-sm-2 col-form-label">企業サイトURL</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control">
+		                		<div class="col-sm-3">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="gridCheck1">
+										<label class="form-check-label" for="gridCheck1">
+											活動中
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="gridCheck1">
+										<label class="form-check-label" for="gridCheck1">
+											内定保持
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="gridCheck1">
+										<label class="form-check-label" for="gridCheck1">
+											進路決定
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="gridCheck1">
+										<label class="form-check-label" for="gridCheck1">
+											希望せず
+										</label>
+									</div>
+		                		</div>
+							</div>
+		                	<div class="row mb-3">
+								<label for="inputText" class="col-sm-2 col-form-label">希望条件</label>
+								<div class="col-sm-10"><div class="accordion" id="accordionExample">
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="headingPlace">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePlace" aria-expanded="false" aria-controls="collapseOne">
+													勤務地
+												</button>
+											</h2>
+											<div id="collapsePlace" class="accordion-collapse collapse" aria-labelledby="headingPlace" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" id="gridCheck1">
+														<label class="form-check-label" for="gridCheck1">
+															福岡
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+														<label class="form-check-label" for="gridCheck2">
+															佐賀
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+														<label class="form-check-label" for="gridCheck2">
+															熊本
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+														<label class="form-check-label" for="gridCheck2">
+															長崎
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+														<label class="form-check-label" for="gridCheck2">
+															大分
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+														<label class="form-check-label" for="gridCheck2">
+															宮﨑
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+														<label class="form-check-label" for="gridCheck2">
+															鹿児島
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+														<label class="form-check-label" for="gridCheck2">
+															関東
+														</label>
+													</div>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+														<label class="form-check-label" for="gridCheck2">
+															その他
+														</label>
+													</div>
+												</div>
+											</div>
+										</div><!-- accordion-item -->
+									</div><!-- accordion -->
 								</div>
 							</div>
 		                	<div class="row mb-3">
-								<label for="inputText" class="col-sm-2 col-form-label">種類</label>
-								<div class="col-sm-4">
-									<select class="form-select" aria-label="Default select example">
-				                      <option selected>併願可</option>
-				                      <option value="1">専願</option>
-				                      <option value="2">オープン</option>
-				                      <option value="3">その他</option>
-				                    </select>
-								</div>
-								<label for="inputText" class="col-sm-2 col-form-label">雇用形態</label>
-								<div class="col-sm-4">
-									<select class="form-select" aria-label="Default select example">
-				                      <option selected>正規</option>
-				                      <option value="1">非正規</option>
-				                      <option value="2">その他</option>
-				                    </select>
-								</div>
-							</div>
-		                	<div class="row mb-3">
-								<label for="inputText" class="col-sm-2 col-form-label">募集職種</label>
+								<label for="inputText" class="col-sm-2 col-form-label">職種</label>
 								<div class="col-sm-10">
 									<div class="accordion" id="accordionExample">
 										<div class="accordion-item">
@@ -372,10 +429,100 @@
 									</div><!-- accordion -->
 								</div>
 							</div>
+							<div class="d-grid gap-2 col-6 mx-auto">
+								<button class="btn btn-outline-primary">検索</button>
+							</div>
 		                </form><!--form-->
     				</div>
     			</div><!-- card -->
     		</div><!-- col-lg-12 -->
+    	</div><!--row-->
+    	<div class="row">
+    		 <div class="col-lg-12">
+    		 	<div class="card">
+    		 		<div class="card-body">
+              			<h5 class="card-title">学生一覧</h5>
+              			<table class="table table-bordered">
+	              			<thead>
+			                  <tr>
+			                    <th scope="col">#</th>
+			                    <th scope="col">名前</th>
+			                    <th scope="col">クラス</th>
+			                    <th scope="col">状況</th>
+			                    <th scope="col">希望職種</th>
+			                    <th scope="col">希望勤務地</th>
+			                    <th scope="col">特記</th>
+			                  </tr>
+			                </thead>
+			                <tbody>
+			                  <tr>
+			                    <th scope="row">1</th>
+			                    <td><a href="#">麻生次郎</a></td>
+			                    <td>ITA</td>
+			                    <td><span class="badge rounded-pill bg-primary">内定保持</span></td>
+			                    <td>SE/PG/OP</td>
+			                    <td>福岡</td>
+			                    <td></td>
+			                  </tr>
+			                  <tr>
+			                    <th scope="row">2</th>
+			                    <td><a href="#">麻生三郎</a></td>
+			                    <td>ITA</td>
+			                    <td><span class="badge rounded-pill bg-danger">進路決定</span></td>
+			                    <td>SE/PG/OP</td>
+			                    <td>関東</td>
+			                    <td></td>
+			                  </tr>
+			                  <tr>
+			                    <th scope="row">3</th>
+			                    <td><a href="#">麻生四郎</a></td>
+			                    <td>ITA</td>
+			                    <td><span class="badge rounded-pill bg-warning text-dark">活動中</span></button></td>
+			                    <td>OP</td>
+			                    <td>どこでも</td>
+			                    <td></td>
+			                  </tr>
+			                  <tr>
+			                    <th scope="row">4</th>
+			                    <td><a href="#">麻生四郎</a></td>
+			                    <td>ITA</td>
+			                    <td><span class="badge rounded-pill bg-secondary">希望せず<span></button></td>
+			                    <td>OP</td>
+			                    <td>九州</td>
+			                    <td></td>
+			                  </tr>
+			                  <tr>
+			                    <th scope="row">5</th>
+			                    <td><a href="#">麻生四郎</a></td>
+			                    <td>ITA</td>
+			                    <td><span class="badge rounded-pill bg-warning text-dark">活動中</span></button></td>
+			                    <td>OP</td>
+			                    <td>関東</td>
+			                    <td>斡旋停止中</td>
+			                  </tr>
+			                  <tr>
+			                    <th scope="row">6</th>
+			                    <td><a href="#">麻生四郎</a></td>
+			                    <td>ITA</td>
+			                    <td><span class="badge rounded-pill bg-warning text-dark">活動中</span></button></td>
+			                    <td>OP</td>
+			                    <td>関東</td>
+			                    <td></td>
+			                  </tr>
+			                  <tr>
+			                    <th scope="row">7</th>
+			                    <td><a href="#">麻生四郎</a></td>
+			                    <td>ITA</td>
+			                    <td><span class="badge rounded-pill bg-warning text-dark">活動中</span></button></td>
+			                    <td>OP</td>
+			                    <td>どこでも</td>
+			                    <td></td>
+			                  </tr>
+			                </tbody>
+              			</table><!-- table -->
+              		</div><!-- card-body -->
+    		 	</div><!-- card -->
+    		 </div><!-- col-lg-12 -->
     	</div><!--row-->
     </section>
 
